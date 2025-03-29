@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Math Snake Game</h1>
+
+    <div id="gameContainer">
+        <div id="gameArea">
+            <canvas id="gameCanvas" width="500" height="500"></canvas>
+        </div>
+    </div>
+
+    <div id="questionArea">
+        <p id="questionText"></p>
+        <input type="text" id="answerInput" placeholder="Your Answer">
+        <button id="submitAnswer">Submit</button>
+    </div>
+
+    <div id="scoreArea">
+        <p>Lives: <span id="lives">3</span></p>
+        <p>Correct Answers: <span id="correctAnswers">0</span></p>
+    </div>
+
+    <div id="nameArea">
+        <input type="text" id="playerName" placeholder="Enter your name">
+        <button id="startGameButton">Start Game</button>
+    </div>
+
+    <div id="leaderboardArea">
+        <h2>Leaderboard</h2>
+        <ol id="leaderboardList"></ol>
+    </div>
+
+    <button id="restartButton" style="display:none;">Restart Game</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
